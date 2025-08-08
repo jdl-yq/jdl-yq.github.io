@@ -305,6 +305,19 @@ body {
   position: relative;
   border-bottom: 1px solid #ddd;
 }
+
+/* 添加响应式头部高度 */
+@media screen and (max-width: 768px) {
+  #header {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #header {
+    height: 150px;
+  }
+}
 #header:before,
 #header:after {
   content: "";
@@ -352,6 +365,31 @@ body {
   top: 50%;
   left: 0;
   margin-top: -20px;
+}
+
+/* 添加响应式标题大小 */
+@media screen and (max-width: 768px) {
+  #logo {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  
+  #subtitle {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #logo {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  
+  #subtitle {
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
 #logo,
 #subtitle {
@@ -528,6 +566,19 @@ body {
   -moz-transition: color 0.2s;
   -ms-transition: color 0.2s;
   transition: color 0.2s;
+}
+
+/* 添加响应式文章标题 */
+@media screen and (max-width: 768px) {
+  .article-title {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .article-title {
+    font-size: 1.5em;
+  }
 }
 a.article-title:hover {
   color: #258fb8;
